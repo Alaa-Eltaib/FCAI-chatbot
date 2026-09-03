@@ -48,7 +48,7 @@ def generate_response(prompt_text):
         messages = [{"role": "user", "content": prompt_text}]
         
         response = client.chat_completion(
-            model="Qwen/Qwen2.5-7B-Instruct",
+            model="meta-llama/Llama-3.2-3B-Instruct",
             messages=messages,
             max_tokens=600,
             temperature=0.2
